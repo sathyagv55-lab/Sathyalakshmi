@@ -12,3 +12,21 @@ trainers = 2
 total = students + trainers
 ''' print Total'''
 print(total)
+#print("Welcome to Inceptez Python Learning")#
+#string quote's#
+str1='This is Inceptez\'s'
+str2="\"Python\""
+str3="""class for Data Engineers & AI Engineers"""
+print(str1,str2,str3)
+#Multi line triple quote string#
+str1='''Welcome to Inceptez Technologies!
+Python Training: Basics
+Enjoy your learning journey.'''
+print(str1)
+#VARIABLES#
+Student =['Arun','Vishnu']
+Course  =['Python Fundamentals']
+Name ='Inceptez Technologies'
+for S in Student :
+ for C in Course:
+  print( S,'is learning the course',C ,'at the institute',Name, )
