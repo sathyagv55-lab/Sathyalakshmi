@@ -29,4 +29,19 @@ Course  =['Python Fundamentals']
 Name ='Inceptez Technologies'
 for S in Student :
  for C in Course:
-  print( S,'is learning the course',C ,'at the institute',Name, )
+  print( S,'is learning the course',C ,'at the institute',Name )
+#Dynamic inference #
+Total_Fee = 45000
+gst = 18
+print(Total_Fee+Total_Fee*gst/100)
+#invalid 2student = 'Ravi'
+ _student_id = 1001
+ studentName = 'Priya'
+ #invalid class name = 'Python'
+ inceptez_batch = 'Morning'
+ print(inceptez_batch)
+#Case Example
+PascalCase= "DataEngineeringBatch"
+camelCase="dataEngineeringBatch"
+snake_case="data_engineering_batch"
+print(PascalCase,camelCase,snake_case)
