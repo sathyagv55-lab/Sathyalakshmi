@@ -45,3 +45,41 @@ PascalCase= "DataEngineeringBatch"
 camelCase="dataEngineeringBatch"
 snake_case="data_engineering_batch"
 print(PascalCase,camelCase,snake_case)
+#12/9/26 task 
+#enter age and calculate retirement age '
+age: int = int(input("Enter your age:"))
+print(isinstance(age,int))
+retirementage=60 - age
+print("you will retire in",retirementage,"years at Inceptez Technologies")
+#Fix the type error in the following code for salary calculation:
+salary = 50000
+bonus = 10000
+print('Total Salary in Inceptez:', salary + bonus)
+#Salary Calculation
+employee_name=input("Enter your employee name:")
+employee_base_salary:float=input("Enter your employee base_salary:")
+employee_hra_percent:int=input("Enter your employee hra_percent:")
+employee_bonus_amount:float=input("Enter your employee bonus_amount:")
+HRA = float(employee_base_salary) * (float(employee_hra_percent) / 100)
+Total_Salary = float(employee_base_salary) + int(HRA) + float(employee_bonus_amount)
+print("employee name:",employee_name,"Base Salary:",employee_base_salary,"HRA@",employee_hra_percent,HRA,"Bonus",employee_bonus_amount,"ToTal Salary payable",Total_Salary,sep='\n')
+#Student Result Classification
+
+Marks=input("Enter your Marks:")
+if Marks.isnumeric()==False:
+ print("Invalid marks entered",Marks,"Please enter numeric input")
+elif int(Marks)>=95:
+    print("Outstanding")
+elif int(Marks) >= 75:
+   print("Excellent")
+elif int(Marks)>= 50:
+ print("Pass")
+elif int(Marks)<50:
+ print("Fail")
+ #Incorrect code:
+item_name=input("Enter product name: ")
+price:float=input("Enter price per item: ")
+quantity:int=input("Enter quantity: ")
+total_cost :float= float(price) * float(quantity)
+print("You purchased " + quantity + " units of "+ item_name)
+print("Total payable: " ,total_cost ,"INR")
