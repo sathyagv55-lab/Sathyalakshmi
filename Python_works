@@ -83,3 +83,27 @@ quantity:int=input("Enter quantity: ")
 total_cost :float= float(price) * float(quantity)
 print("You purchased " + quantity + " units of "+ item_name)
 print("Total payable: " ,total_cost ,"INR")
+TotalMonthlyDataLimit:int=input("Total monthly data limit in GB: ")
+DataUsed:int=input("Data used so far: ")
+Remainingdata:int = int(TotalMonthlyDataLimit)-int(DataUsed)
+percentage:float = round(int(DataUsed) / int(TotalMonthlyDataLimit) * 100,2)
+print(Remainingdata)
+print(percentage)
+if(percentage>=80):
+    print("Warning: High usage, consider upgrading your plan.")
+#calculate price
+originalprice=float(input("Enter original price:"))
+discount_percent=int(input("Enter discount:"))
+discount_amount = round(float(originalprice * discount_percent) / 100,2)
+Finalprice = round(originalprice - discount_amount,2)
+print(originalprice)
+print(discount_amount)
+print(Finalprice)
+#Incorrect code:
+age = input("Enter age: ")
+citizen = input("Are you an Indian citizen? (yes/no)")
+if age >"18" and citizen =="yes":#assignment operator
+ print("Eligible to vote")
+else:#corrected indent()
+ print("Not eligible")
+
