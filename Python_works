@@ -106,4 +106,25 @@ if age >"18" and citizen =="yes":#assignment operator
  print("Eligible to vote")
 else:#corrected indent()
  print("Not eligible")
+#check room availability
+check=input("enter room availability")
+Guest=input("enter guest")
+member=input("enter member")
+if check=="available":
+    if Guest=="VIP" :
+        print("Offer complimentary upgrade")
+    elif int(member) >5:
+        print("Offer discount 10%")
+    else:
+        print("standard price")
+else:
+    print("No rooms available")
+#Nested Condition Logic Issue
+temp:float= input("Enter body temperature in Celsius: ")
+if temp < "37":
+ print("Normal temperature")
+elif temp >= "37" and temp < "39":
+ print("Fever")
+else:
+ print("High fever")
 
